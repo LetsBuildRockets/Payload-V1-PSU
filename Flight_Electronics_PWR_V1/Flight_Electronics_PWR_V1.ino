@@ -7,6 +7,17 @@ long serialMillis = 0;
 void setup() {
   Serial.begin(9600);
   pinMode(statusPin, OUTPUT);
+  pinMode(9, OUTPUT);
+  
+  tone(9, 880, 100);
+  delay(100);
+  tone(9, 1109, 100);
+  delay(100);
+  tone(9, 1319, 100);
+  delay(100);
+  tone(9, 1760, 100);
+  delay(100);
+  
 }
 
 void loop() {
