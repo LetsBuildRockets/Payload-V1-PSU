@@ -22,7 +22,7 @@ void setup() {
 
 void loop() {
   float vbat = getBatteryVoltage();
-  if(vbat < 10) {
+  if(vbat < 11.01) {
     digitalWrite(statusPin, HIGH);
     beep();
   } else {
